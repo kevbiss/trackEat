@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/uti_name"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="10dp"
+            android:text="Kevin"
+            android:textSize="26dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="583dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="94dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="672dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="243dp">
+
+                <TextView
+                    android:id="@+id/txtPoids"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginTop="77dp"
+                    android:layout_marginEnd="128dp"
+                    android:text="100.50kg"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="27dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPoids"
+                    tools:layout_editor_absoluteX="1dp">
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtObjectifPoids"
+                            android:layout_width="match_parent"
+                            android:layout_height="61dp"
+                            android:layout_weight="1"
+                            android:text="Objectif poids"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtObjectifGraisse"
+                            android:textSize="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="277dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtDateAjd"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:text="Date" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtPoidsMain"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txtIMC"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txtGraisseCorporelle"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtTcou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="taille cou" />
+
+                    <TextView
+                        android:id="@+id/txtTPoitrine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="taille Poitrine" />
+
+                    <TextView
+                        android:id="@+id/txtTVentre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tour de ventre" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtTTaille"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="tour de taille" />
+
+                    <TextView
+                        android:id="@+id/txtTFesse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="tour de fesse" />
+
+                    <TextView
+                        android:id="@+id/txtBrasGauche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="tour de bras gauche" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBrasDroit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="tour de bras droit" />
+
+                    <TextView
+                        android:id="@+id/txtCuisseGauche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="tour de cuisse gauche" />
+
+                    <TextView
+                        android:id="@+id/txtCuisseDroit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="tour de cuisse Droit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/homebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/planAlimbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="plan Alim" />
+
+                <Button
+                    android:id="@+id/comptagebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Comptage" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

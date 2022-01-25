@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.AddMesureActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Controller.AddMesureActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <Button
+            android:id="@+id/AddMesure"
+            android:layout_width="131dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="19dp"
+            android:text="Valider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="406dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/poids2"
+                    android:layout_width="84dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Poids"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/p100mg"
+                    android:layout_width="100dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="pourcentage de Masse graisseuse"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/tailleCM"
+                    android:layout_width="110dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:hint="Taille(en cm)"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toStartOf="@+id/p100mg"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/poids2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="406dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <EditText
+                    android:id="@+id/poitrine2"
+                    android:layout_width="119dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="poitrine"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/ventre2"
+                    android:layout_width="106dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:ems="10"
+                    android:hint="ventre"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/cou2"
+                    android:layout_width="115dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="cou"
+                    android:inputType="numberSigned"
+                    app:layout_constraintEnd_toStartOf="@+id/ventre2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/poitrine2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="406dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <EditText
+                    android:id="@+id/brad_Droit2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:ems="10"
+                    android:hint="Bras Droit"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/bras_Gauche2"
+                    android:layout_width="150dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="9dp"
+                    android:ems="10"
+                    android:hint="Bras Gauche"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="406dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <EditText
+                    android:id="@+id/taille2"
+                    android:layout_width="114dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="taille"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/hanche2"
+                    android:layout_width="118dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="36dp"
+                    android:ems="10"
+                    android:hint="hanche"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/Cuisse_Gauche2"
+                android:layout_width="161dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:ems="10"
+                android:hint="Cuisse gauche"
+                android:inputType="number"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+            <EditText
+                android:id="@+id/Cuisse_Droit2"
+                android:layout_width="165dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="17dp"
+                android:ems="10"
+                android:hint="Cuisse droite"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="276dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="16dp"
+            android:text="Veuillez renseigner vos mesures (en cm)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
